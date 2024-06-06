@@ -151,6 +151,13 @@ public class Lulutest extends Baseclass
 	    
 	
 	}
+	
+	@Test
+	public void cart()
+	{
+		ob=new Lulupage(driver);
+		ob.cart();
+	}
 
 	
 

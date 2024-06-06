@@ -21,32 +21,18 @@ public class Lulupage {
 	@FindBy(xpath="//*[@id=\"footer\"]/section[2]/div/div/div[1]/ul[2]/li[3]/a/svg")
 	WebElement  instagram;
 	
-	/*@FindBy(="")
-	WebElement  ;
+	@FindBy(xpath="/html/body/main/header/section[2]/nav/div/div[1]/div[2]/div/ul/li[2]/a")
+	WebElement  grocery;
 	
-	@FindBy(="")
-	WebElement  ;
+	@FindBy(xpath="//*[@id='addToCartForm379907']/div[2]/button")
+	WebElement  butter;
 	
-	@FindBy(="")
-	WebElement  ;
+	@FindBy(xpath="//*[@id='addToCartForm988298']/div[2]/button")
+	WebElement oliveoil ;
 	
-	@FindBy(="")
-	WebElement  ;
+	@FindBy(xpath="//*[@id='header']/section/div/div/div[4]/ul/li[4]/a[2]/svg/use")
+	WebElement  veiwcart;
 	
-	@FindBy(="")
-	WebElement  ;
-	
-	@FindBy(="")
-	WebElement  ;
-	
-	@FindBy(="")
-	WebElement  ;
-	
-	@FindBy(="")
-	WebElement  ;
-	
-	@FindBy(="")
-	WebElement  ;*/
 	
 public Lulupage(ChromeDriver driver) {
 	this.driver=driver;
@@ -63,6 +49,13 @@ login.click();
 public void mulwindow()
 {
 	instagram.click();
+}
+public void cart()
+{
+	grocery.click();
+	butter.click();
+	oliveoil.click();
+	veiwcart.click();
 }
 }
 
